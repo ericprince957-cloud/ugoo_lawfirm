@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-gold {
+    background: linear-gradient(135deg, #b8860b, #daa520, #f4c430);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #b8860b, #daa520, #f4c430);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #0a1628 0%, #1a2744 50%, #0d1f3c 100%);
+  }
+
+  .section-gradient {
+    background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  }
+}
